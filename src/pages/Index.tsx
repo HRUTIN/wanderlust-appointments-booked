@@ -45,10 +45,10 @@ const Index = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-earth-800 to-earth-900 text-earth-100 py-8 mt-20">
+      <footer className="bg-gradient-to-r from-sky-800 to-sky-900 text-sky-100 py-8 mt-20">
         <div className="container mx-auto px-4 text-center">
           <p className="text-lg font-serif mb-2">Wanderlust Travel Agency</p>
-          <p className="text-earth-300">Creating unforgettable journeys since 2024</p>
+          <p className="text-sky-300">Creating unforgettable journeys since 2024</p>
         </div>
       </footer>
     </div>

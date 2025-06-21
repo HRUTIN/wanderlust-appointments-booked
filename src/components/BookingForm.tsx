@@ -70,15 +70,15 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedDate, selectedTime })
   const isFormValid = selectedDate && selectedTime && formData.name && formData.email;
 
   return (
-    <Card className="bg-card/80 backdrop-blur-sm border-earth-200 shadow-lg">
+    <Card className="bg-card/80 backdrop-blur-sm border-sky-200 shadow-lg">
       <CardHeader className="text-center">
-        <CardTitle className="flex items-center justify-center gap-2 text-earth-800 font-serif text-2xl">
+        <CardTitle className="flex items-center justify-center gap-2 text-sky-800 font-serif text-2xl">
           <Plane className="w-6 h-6" />
           Book Your Adventure
         </CardTitle>
         {selectedDate && selectedTime && (
-          <div className="mt-4 p-4 bg-gradient-to-r from-adventure-100 to-adventure-200 rounded-lg">
-            <p className="text-adventure-800 font-medium">
+          <div className="mt-4 p-4 bg-gradient-to-r from-sky-100 to-sky-200 rounded-lg">
+            <p className="text-sky-800 font-medium">
               📅 {format(selectedDate, 'EEEE, MMMM d, yyyy')} at {selectedTime}
             </p>
           </div>
@@ -87,7 +87,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedDate, selectedTime })
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">
-            <Label htmlFor="name" className="flex items-center gap-2 text-earth-700">
+            <Label htmlFor="name" className="flex items-center gap-2 text-sky-700">
               <User className="w-4 h-4" />
               Full Name
             </Label>
@@ -98,13 +98,13 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedDate, selectedTime })
               value={formData.name}
               onChange={handleInputChange}
               placeholder="Enter your full name"
-              className="border-earth-200 focus:border-earth-500 focus:ring-earth-500"
+              className="border-sky-200 focus:border-sky-500 focus:ring-sky-500"
               required
             />
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="email" className="flex items-center gap-2 text-earth-700">
+            <Label htmlFor="email" className="flex items-center gap-2 text-sky-700">
               <Mail className="w-4 h-4" />
               Email Address
             </Label>
@@ -115,13 +115,13 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedDate, selectedTime })
               value={formData.email}
               onChange={handleInputChange}
               placeholder="Enter your email address"
-              className="border-earth-200 focus:border-earth-500 focus:ring-earth-500"
+              className="border-sky-200 focus:border-sky-500 focus:ring-sky-500"
               required
             />
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="message" className="flex items-center gap-2 text-earth-700">
+            <Label htmlFor="message" className="flex items-center gap-2 text-sky-700">
               <MessageSquare className="w-4 h-4" />
               Special Requests (Optional)
             </Label>
@@ -131,7 +131,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedDate, selectedTime })
               value={formData.message}
               onChange={handleInputChange}
               placeholder="Tell us about your dream adventure or any special requirements..."
-              className="border-earth-200 focus:border-earth-500 focus:ring-earth-500 min-h-[100px]"
+              className="border-sky-200 focus:border-sky-500 focus:ring-sky-500 min-h-[100px]"
               rows={4}
             />
           </div>
@@ -139,7 +139,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedDate, selectedTime })
           <Button
             type="submit"
             disabled={!isFormValid || isSubmitting}
-            className="w-full bg-gradient-to-r from-earth-600 to-earth-700 hover:from-earth-700 hover:to-earth-800 text-white font-medium py-3 rounded-lg transition-all duration-200 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+            className="w-full bg-gradient-to-r from-sky-600 to-sky-700 hover:from-sky-700 hover:to-sky-800 text-white font-medium py-3 rounded-lg transition-all duration-200 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
           >
             {isSubmitting ? (
               <div className="flex items-center gap-2">
@@ -154,7 +154,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedDate, selectedTime })
             )}
           </Button>
 
-          <p className="text-sm text-earth-600 text-center mt-4">
+          <p className="text-sm text-sky-600 text-center mt-4">
             🌟 We'll confirm your booking within 24 hours and send you a detailed itinerary!
           </p>
         </form>

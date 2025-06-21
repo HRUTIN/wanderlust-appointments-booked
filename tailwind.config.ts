@@ -67,18 +67,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Travel-themed colors
+				// Travel-themed colors with sky blue theme
 				earth: {
-					50: '#fdf8f6',
-					100: '#f2e8e5',
-					200: '#eaddd7',
-					300: '#e0cec7',
-					400: '#d2bab0',
-					500: '#bfa094',
-					600: '#a18072',
-					700: '#977669',
-					800: '#846358',
-					900: '#43302b',
+					50: '#f0f9ff',
+					100: '#e0f2fe',
+					200: '#bae6fd',
+					300: '#7dd3fc',
+					400: '#38bdf8',
+					500: '#0ea5e9',
+					600: '#0284c7',
+					700: '#0369a1',
+					800: '#075985',
+					900: '#0c4a6e',
 				},
 				forest: {
 					50: '#f0f9ff',
@@ -93,16 +93,16 @@ export default {
 					900: '#0c4a6e',
 				},
 				adventure: {
-					50: '#fefce8',
-					100: '#fef9c3',
-					200: '#fef08a',
-					300: '#fde047',
-					400: '#facc15',
-					500: '#eab308',
-					600: '#ca8a04',
-					700: '#a16207',
-					800: '#854d0e',
-					900: '#713f12',
+					50: '#f0f9ff',
+					100: '#e0f2fe',
+					200: '#bae6fd',
+					300: '#7dd3fc',
+					400: '#38bdf8',
+					500: '#0ea5e9',
+					600: '#0284c7',
+					700: '#0369a1',
+					800: '#075985',
+					900: '#0c4a6e',
 				}
 			},
 			borderRadius: {
@@ -162,7 +162,7 @@ export default {
 				'pulse-soft': 'pulse-soft 2s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'world-map': "url('data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\" fill=\"none\"%3E%3Cpath d=\"M100 300c50-20 100 20 150 0s100-40 150-20 100 40 150 20 100-60 150-40 100 60 150 40 100-80 150-60 100 80 150 60\" stroke=\"%23d2bab0\" stroke-width=\"1\" fill=\"none\" opacity=\"0.3\"/%3E%3C/svg%3E')"
+				'world-map': "url('data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\" fill=\"none\"%3E%3Cpath d=\"M100 300c50-20 100 20 150 0s100-40 150-20 100 40 150 20 100-60 150-40 100 60 150 40 100-80 150-60 100 80 150 60\" stroke=\"%2338bdf8\" stroke-width=\"1\" fill=\"none\" opacity=\"0.3\"/%3E%3C/svg%3E')"
 			}
 		}
 	},

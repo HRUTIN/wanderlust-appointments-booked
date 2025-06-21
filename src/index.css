@@ -7,83 +7,83 @@
 
 @layer base {
   :root {
-    --background: 245 245 240;
-    --foreground: 43 30 27;
+    --background: 240 249 255;
+    --foreground: 12 74 110;
 
-    --card: 254 248 246;
-    --card-foreground: 43 30 27;
+    --card: 248 250 252;
+    --card-foreground: 12 74 110;
 
-    --popover: 254 248 246;
-    --popover-foreground: 43 30 27;
+    --popover: 248 250 252;
+    --popover-foreground: 12 74 110;
 
-    --primary: 132 99 88;
-    --primary-foreground: 254 248 246;
+    --primary: 14 116 144;
+    --primary-foreground: 248 250 252;
 
-    --secondary: 234 221 215;
-    --secondary-foreground: 43 30 27;
+    --secondary: 186 230 253;
+    --secondary-foreground: 12 74 110;
 
-    --muted: 234 221 215;
-    --muted-foreground: 132 99 88;
+    --muted: 186 230 253;
+    --muted-foreground: 14 116 144;
 
-    --accent: 202 162 144;
-    --accent-foreground: 254 248 246;
+    --accent: 56 189 248;
+    --accent-foreground: 248 250 252;
 
     --destructive: 220 38 38;
     --destructive-foreground: 254 248 246;
 
-    --border: 234 221 215;
-    --input: 234 221 215;
-    --ring: 132 99 88;
+    --border: 186 230 253;
+    --input: 186 230 253;
+    --ring: 14 116 144;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 254 248 246;
-    --sidebar-foreground: 43 30 27;
-    --sidebar-primary: 132 99 88;
-    --sidebar-primary-foreground: 254 248 246;
-    --sidebar-accent: 234 221 215;
-    --sidebar-accent-foreground: 43 30 27;
-    --sidebar-border: 234 221 215;
-    --sidebar-ring: 132 99 88;
+    --sidebar-background: 248 250 252;
+    --sidebar-foreground: 12 74 110;
+    --sidebar-primary: 14 116 144;
+    --sidebar-primary-foreground: 248 250 252;
+    --sidebar-accent: 186 230 253;
+    --sidebar-accent-foreground: 12 74 110;
+    --sidebar-border: 186 230 253;
+    --sidebar-ring: 14 116 144;
   }
 
   .dark {
-    --background: 43 30 27;
-    --foreground: 254 248 246;
+    --background: 8 47 73;
+    --foreground: 248 250 252;
 
-    --card: 43 30 27;
-    --card-foreground: 254 248 246;
+    --card: 8 47 73;
+    --card-foreground: 248 250 252;
 
-    --popover: 43 30 27;
-    --popover-foreground: 254 248 246;
+    --popover: 8 47 73;
+    --popover-foreground: 248 250 252;
 
-    --primary: 254 248 246;
-    --primary-foreground: 43 30 27;
+    --primary: 248 250 252;
+    --primary-foreground: 8 47 73;
 
-    --secondary: 71 50 44;
-    --secondary-foreground: 254 248 246;
+    --secondary: 12 74 110;
+    --secondary-foreground: 248 250 252;
 
-    --muted: 71 50 44;
-    --muted-foreground: 191 160 148;
+    --muted: 12 74 110;
+    --muted-foreground: 125 211 252;
 
-    --accent: 71 50 44;
-    --accent-foreground: 254 248 246;
+    --accent: 12 74 110;
+    --accent-foreground: 248 250 252;
 
     --destructive: 239 68 68;
-    --destructive-foreground: 254 248 246;
+    --destructive-foreground: 248 250 252;
 
-    --border: 71 50 44;
-    --input: 71 50 44;
-    --ring: 254 248 246;
+    --border: 12 74 110;
+    --input: 12 74 110;
+    --ring: 248 250 252;
     
-    --sidebar-background: 43 30 27;
-    --sidebar-foreground: 254 248 246;
-    --sidebar-primary: 254 248 246;
-    --sidebar-primary-foreground: 43 30 27;
-    --sidebar-accent: 71 50 44;
-    --sidebar-accent-foreground: 254 248 246;
-    --sidebar-border: 71 50 44;
-    --sidebar-ring: 254 248 246;
+    --sidebar-background: 8 47 73;
+    --sidebar-foreground: 248 250 252;
+    --sidebar-primary: 248 250 252;
+    --sidebar-primary-foreground: 8 47 73;
+    --sidebar-accent: 12 74 110;
+    --sidebar-accent-foreground: 248 250 252;
+    --sidebar-border: 12 74 110;
+    --sidebar-ring: 248 250 252;
   }
 }
 
@@ -95,15 +95,15 @@
   body {
     @apply bg-background text-foreground font-sans;
     background-image: 
-      radial-gradient(circle at 20% 50%, rgba(191, 160, 148, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(202, 162, 144, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 80%, rgba(224, 206, 199, 0.1) 0%, transparent 50%);
+      radial-gradient(circle at 20% 50%, rgba(125, 211, 252, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(186, 230, 253, 0.1) 0%, transparent 50%);
   }
 }
 
 @layer components {
   .destination-pin {
-    @apply absolute w-6 h-6 bg-gradient-to-br from-adventure-400 to-adventure-600 rounded-full shadow-lg;
+    @apply absolute w-6 h-6 bg-gradient-to-br from-sky-400 to-sky-600 rounded-full shadow-lg;
     @apply before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2;
     @apply before:w-3 before:h-3 before:bg-white before:rounded-full;
     animation: float 6s ease-in-out infinite;
@@ -111,11 +111,11 @@
 
   .travel-gradient {
     background: linear-gradient(135deg, 
-      rgba(191, 160, 148, 0.1) 0%, 
-      rgba(202, 162, 144, 0.1) 25%,
-      rgba(224, 206, 199, 0.1) 50%,
-      rgba(234, 221, 215, 0.1) 75%,
-      rgba(254, 248, 246, 0.1) 100%
+      rgba(125, 211, 252, 0.1) 0%, 
+      rgba(56, 189, 248, 0.1) 25%,
+      rgba(14, 165, 233, 0.1) 50%,
+      rgba(2, 132, 199, 0.1) 75%,
+      rgba(3, 105, 161, 0.1) 100%
     );
   }
 }

@@ -34,9 +34,9 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
   return (
     <div className="grid lg:grid-cols-2 gap-8">
       {/* Calendar */}
-      <Card className="bg-card/80 backdrop-blur-sm border-earth-200 shadow-lg">
+      <Card className="bg-card/80 backdrop-blur-sm border-sky-200 shadow-lg">
         <CardHeader className="text-center">
-          <CardTitle className="flex items-center justify-center gap-2 text-earth-800 font-serif">
+          <CardTitle className="flex items-center justify-center gap-2 text-sky-800 font-serif">
             <MapPin className="w-5 h-5" />
             Select Your Adventure Date
           </CardTitle>
@@ -51,22 +51,22 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
             classNames={{
               months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0",
               month: "space-y-4",
-              caption: "flex justify-center pt-1 relative items-center text-earth-800 font-medium",
+              caption: "flex justify-center pt-1 relative items-center text-sky-800 font-medium",
               caption_label: "text-lg font-serif",
               nav: "space-x-1 flex items-center",
-              nav_button: "h-8 w-8 bg-transparent p-0 hover:bg-earth-200 rounded-md transition-colors",
+              nav_button: "h-8 w-8 bg-transparent p-0 hover:bg-sky-200 rounded-md transition-colors",
               nav_button_previous: "absolute left-1",
               nav_button_next: "absolute right-1",
               table: "w-full border-collapse space-y-1",
               head_row: "flex",
-              head_cell: "text-earth-600 rounded-md w-9 font-normal text-sm",
+              head_cell: "text-sky-600 rounded-md w-9 font-normal text-sm",
               row: "flex w-full mt-2",
               cell: "text-center text-sm p-0 relative focus-within:relative focus-within:z-20",
-              day: "h-9 w-9 p-0 font-normal hover:bg-earth-200 rounded-md transition-colors",
-              day_selected: "bg-gradient-to-br from-earth-600 to-earth-700 text-white hover:bg-earth-700 focus:bg-earth-700",
-              day_today: "bg-adventure-100 text-adventure-800 font-semibold",
-              day_outside: "text-earth-400",
-              day_disabled: "text-earth-300 opacity-50 cursor-not-allowed",
+              day: "h-9 w-9 p-0 font-normal hover:bg-sky-200 rounded-md transition-colors",
+              day_selected: "bg-gradient-to-br from-sky-600 to-sky-700 text-white hover:bg-sky-700 focus:bg-sky-700",
+              day_today: "bg-sky-100 text-sky-800 font-semibold",
+              day_outside: "text-sky-400",
+              day_disabled: "text-sky-300 opacity-50 cursor-not-allowed",
               day_hidden: "invisible",
             }}
           />
@@ -74,9 +74,9 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
       </Card>
 
       {/* Time Slots */}
-      <Card className="bg-card/80 backdrop-blur-sm border-earth-200 shadow-lg">
+      <Card className="bg-card/80 backdrop-blur-sm border-sky-200 shadow-lg">
         <CardHeader className="text-center">
-          <CardTitle className="flex items-center justify-center gap-2 text-earth-800 font-serif">
+          <CardTitle className="flex items-center justify-center gap-2 text-sky-800 font-serif">
             <Clock className="w-5 h-5" />
             Choose Your Time
           </CardTitle>
@@ -90,8 +90,8 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
                   onClick={() => onTimeSelect(time)}
                   className={`p-3 rounded-lg border-2 transition-all duration-200 hover:scale-105 ${
                     selectedTime === time
-                      ? 'border-earth-600 bg-gradient-to-br from-earth-600 to-earth-700 text-white shadow-lg'
-                      : 'border-earth-200 bg-white hover:border-earth-400 hover:bg-earth-50'
+                      ? 'border-sky-600 bg-gradient-to-br from-sky-600 to-sky-700 text-white shadow-lg'
+                      : 'border-sky-200 bg-white hover:border-sky-400 hover:bg-sky-50'
                   }`}
                 >
                   <div className="text-sm font-medium">{time}</div>
@@ -100,7 +100,7 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
               ))}
             </div>
           ) : (
-            <div className="text-center py-8 text-earth-500">
+            <div className="text-center py-8 text-sky-500">
               <Clock className="w-12 h-12 mx-auto mb-4 opacity-50" />
               <p>Please select a date first</p>
             </div>
