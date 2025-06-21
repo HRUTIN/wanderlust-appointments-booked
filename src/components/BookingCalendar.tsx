@@ -98,7 +98,7 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
                   className={`p-3 rounded-lg border-2 transition-all duration-200 hover:scale-105 ${
                     selectedTime === time
                       ? 'border-sky-600 bg-gradient-to-br from-sky-600 to-sky-700 text-white shadow-lg'
-                      : 'border-sky-200 bg-white hover:border-sky-400 hover:bg-sky-50'
+                      : 'border-sky-200 bg-white hover:border-sky-400 hover:bg-sky-50 text-sky-800'
                   }`}
                 >
                   <div className="text-sm font-medium">{time}</div>
