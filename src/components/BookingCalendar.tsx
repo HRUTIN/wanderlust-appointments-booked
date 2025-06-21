@@ -34,7 +34,7 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
   return (
     <div className="grid lg:grid-cols-2 gap-8">
       {/* Calendar */}
-      <Card className="bg-card/80 backdrop-blur-sm border-sky-200 shadow-lg">
+      <Card className="bg-white border-sky-200 shadow-lg hover:bg-[#F4EBD0] transition-colors duration-300">
         <CardHeader className="text-center">
           <CardTitle className="flex items-center justify-center gap-2 text-sky-800 font-serif">
             <MapPin className="w-5 h-5" />
@@ -74,7 +74,7 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
       </Card>
 
       {/* Time Slots */}
-      <Card className="bg-card/80 backdrop-blur-sm border-sky-200 shadow-lg">
+      <Card className="bg-white border-sky-200 shadow-lg hover:bg-[#F4EBD0] transition-colors duration-300">
         <CardHeader className="text-center">
           <CardTitle className="flex items-center justify-center gap-2 text-sky-800 font-serif">
             <Clock className="w-5 h-5" />

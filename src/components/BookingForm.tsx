@@ -70,7 +70,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedDate, selectedTime })
   const isFormValid = selectedDate && selectedTime && formData.name && formData.email;
 
   return (
-    <Card className="bg-card/80 backdrop-blur-sm border-sky-200 shadow-lg">
+    <Card className="bg-white border-sky-200 shadow-lg hover:bg-[#F4EBD0] transition-colors duration-300">
       <CardHeader className="text-center">
         <CardTitle className="flex items-center justify-center gap-2 text-sky-800 font-serif text-2xl">
           <Plane className="w-6 h-6" />
@@ -98,7 +98,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedDate, selectedTime })
               value={formData.name}
               onChange={handleInputChange}
               placeholder="Enter your full name"
-              className="border-sky-200 focus:border-sky-500 focus:ring-sky-500"
+              className="border-sky-200 focus:border-sky-500 focus:ring-sky-500 bg-white"
               required
             />
           </div>
@@ -115,7 +115,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedDate, selectedTime })
               value={formData.email}
               onChange={handleInputChange}
               placeholder="Enter your email address"
-              className="border-sky-200 focus:border-sky-500 focus:ring-sky-500"
+              className="border-sky-200 focus:border-sky-500 focus:ring-sky-500 bg-white"
               required
             />
           </div>
@@ -131,7 +131,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedDate, selectedTime })
               value={formData.message}
               onChange={handleInputChange}
               placeholder="Tell us about your dream adventure or any special requirements..."
-              className="border-sky-200 focus:border-sky-500 focus:ring-sky-500 min-h-[100px]"
+              className="border-sky-200 focus:border-sky-500 focus:ring-sky-500 min-h-[100px] bg-white"
               rows={4}
             />
           </div>

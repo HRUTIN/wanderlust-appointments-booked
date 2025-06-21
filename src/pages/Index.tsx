@@ -19,14 +19,14 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <HeroSection />
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12 space-y-12">
         {/* Calendar Section */}
-        <div className="animate-fade-in">
+        <div className="animate-fade-in section-hover rounded-xl p-6 transition-colors duration-300">
           <BookingCalendar
             selectedDate={selectedDate}
             onDateSelect={handleDateSelect}
@@ -36,7 +36,7 @@ const Index = () => {
         </div>
 
         {/* Booking Form Section */}
-        <div className="max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <div className="max-w-2xl mx-auto animate-fade-in section-hover rounded-xl p-6 transition-colors duration-300" style={{ animationDelay: '0.2s' }}>
           <BookingForm
             selectedDate={selectedDate}
             selectedTime={selectedTime}
