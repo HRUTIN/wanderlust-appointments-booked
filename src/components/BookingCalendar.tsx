@@ -18,9 +18,16 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
   selectedTime,
   onTimeSelect
 }) => {
-  // Sample available time slots
+  // Sample available time slots with IST format
   const timeSlots = [
-    '09:00', '10:00', '11:00', '14:00', '15:00', '16:00', '17:00'
+    '9:00 AM IST',
+    '10:30 AM IST', 
+    '12:15 PM IST',
+    '2:45 PM IST',
+    '4:00 PM IST',
+    '5:30 PM IST',
+    '7:15 PM IST',
+    '8:45 PM IST'
   ];
 
   const isDateDisabled = (date: Date) => {
@@ -83,7 +90,7 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
         </CardHeader>
         <CardContent>
           {selectedDate ? (
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 gap-3">
               {timeSlots.map((time) => (
                 <button
                   key={time}
